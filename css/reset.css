@@ -7,8 +7,6 @@ html,body{
   line-height: 1;
 }
 h1,h2,h3,h4,h5,h6{
-  font-size: 100%; /*16pixel을 의미*/
-  font-weight: normal;
 }
 a{
   text-decoration: none; /*밑줄 제거*/
