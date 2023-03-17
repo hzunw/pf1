@@ -1,0 +1,108 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상단 영역*/
+header{
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 550px);
+}
+header h1{
+  
+}
+
+header h1 a{
+  
+  width: 230px;
+  height: 25px;
+  display: block;
+  font-size: 0;
+  background-image: url(../img/hj_logo.jpg);
+}
+
+
+}
+a{
+  
+}
+nav{
+  display: flex;
+}
+ul{
+  display: flex;
+}
+ul.gnb{
+  
+  border-top: 1px solid gray;
+}
+ul.gnb li{
+  
+}
+ul.gnb li a{
+  padding: 10px 30px;
+  display: block;
+}
+ul.gnb li a:hover{
+  color: #3434ec;
+  border-top: 1px solid blue;
+}
+ul.etcmenu{
+  position: absolute;
+  top: 8px;
+  right: 0px;
+}
+ul.etcmenu li a{
+    padding: 5px 10px;
+    FONT-SIZE: 12px
+}
+ul.etcmenu li a:hover{
+  color: #3434ec;
+}
+li{
+  
+}
+
+div#title{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*! border: 1px solid red; */
+  height: 600px;
+  background-image: url(../img/title.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 51%;
+}
+
+div#title h2{
+  
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+div#title h2 span{
+  
+  font-weight: 500;
+}
+
+div#title p{
+  
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+div#title a{
+  
+  background-color: green;
+  color: white;
+  padding: 18px;
+}
