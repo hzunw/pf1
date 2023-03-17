@@ -75,11 +75,12 @@ div#title{
   justify-content: center;
   align-items: center;
   /*! border: 1px solid red; */
-  height: 600px;
+  height: 700px;
   background-image: url(../img/title.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 51%;
+  background-attachment: fixed;
 }
 
 div#title h2{
@@ -90,7 +91,7 @@ div#title h2{
 
 div#title h2 span{
   
-  font-weight: 500;
+  font-weight: bold;
 }
 
 div#title p{
@@ -105,4 +106,9 @@ div#title a{
   background-color: green;
   color: white;
   padding: 18px;
+}
+
+/* 메인영역 */
+main{
+  height: 1000px
 }
