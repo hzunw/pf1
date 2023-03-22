@@ -1,35 +1,28 @@
 body{
   font-family: 'Noto Sans KR', sans-serif;
+  font-weight:300;
 }
-
-/* 상단 영역*/
+/* 상단영역 */
 header{
   width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto; /* 수평중앙정렬 */
   display: flex;
   justify-content: space-between;
   height: 100px;
   align-items: center;
   position: absolute;
   left: calc(50% - 550px);
+  z-index: 1;
 }
 header h1{
-  
+ 
 }
-
 header h1 a{
-  
+  background-image: url(../img/hj_logo.jpg);
   width: 230px;
   height: 25px;
   display: block;
   font-size: 0;
-  background-image: url(../img/hj_logo.jpg);
-}
-
-
-}
-a{
-  
 }
 nav{
   display: flex;
@@ -41,15 +34,15 @@ ul.gnb{
   
   border-top: 1px solid gray;
 }
-ul.gnb li{
-  
+ul.gnb li{ /*클래스명이gnb인ul 아래에 위치한(있는) li*/
+          /* 경기도 인천시 부평구 */    
 }
 ul.gnb li a{
   padding: 10px 30px;
   display: block;
 }
 ul.gnb li a:hover{
-  color: #3434ec;
+  color:blue;
   border-top: 1px solid blue;
 }
 ul.etcmenu{
@@ -57,58 +50,157 @@ ul.etcmenu{
   top: 8px;
   right: 0px;
 }
+ul.etcmenu li{
+  
+}
+
 ul.etcmenu li a{
-    padding: 5px 10px;
-    FONT-SIZE: 12px
+  padding: 5px 12px;
+  font-size: 13px;
 }
 ul.etcmenu li a:hover{
-  color: #3434ec;
+  color: gray;
+}
+
+ul.etcmenu li:first-child a::after{ /* 가상선택자 ::before,::after / :first-child 첫번째자식 */
+  content: "▼"; 
+  font-size: 7px;
+  vertical-align: 2px; /* vertical-align 글자수직정렬 */
 }
 li{
   
 }
-
+/* 타이틀영역 */
 div#title{
-  
+  height: 607px;
+  /*! border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*! border: 1px solid red; */
-  height: 700px;
   background-image: url(../img/title.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 51%;
+  background-size: cover;
+  background-position-y: 45%;
   background-attachment: fixed;
+  position: relative;
 }
-
+div#title::before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 240px solid rgba(33, 33, 40, 0.2);
+  border-right-width: 390px;
+  border-left-width: 390px;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 div#title h2{
-  
   font-size: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 11px;
 }
-
 div#title h2 span{
-  
-  font-weight: bold;
+  font-weight: 500;
 }
-
+div#title span{
+  
+}
+div#title h2::after{
+  content: "";
+  width: 2px;
+  height: 60px;
+  display: block;
+  background-color: #666;
+ margin: 0 auto;
+  margin-top: 14px;
+}
 div#title p{
-  
   text-align: center;
-  margin-bottom: 30px;
   line-height: 1.3;
+  margin-bottom: 30px;
 }
-
 div#title a{
-  
   background-color: green;
   color: white;
-  padding: 18px;
+  width: 63px;
+  height: 31px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90%;
+}
+div#title a::before{
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border: 31px solid green;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: green;
+  border-left-color: transparent;
+  position: absolute;
+  top: -51px;
+  left: 0;
+  border-bottom-width: 20px;
+}
+div#title a::after{
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border: 31px solid green;
+  border-top-color: green;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  border-top-width: 20px;
 }
 
-/* 메인영역 */
-main{
-  height: 1000px
+/* 메인영역-한진소개 */
+main {
+  
+}
+main section#intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main section#intro div {
+  width: 1400px;
+  margin: 0 auto;
+}
+main section#intro div h2 {
+  display: none;
+}
+main section#intro div ul {
+  justify-content: space-between;
+}
+main section#intro div ul li {
+  width: calc(100% / 4 - 60px / 4);
+  height: 260px;
+  background-color: #ccc;
+}
+main section#intro div ul li a {
+  
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section#intro div ul li a h3 {
+  
+}
+main section#intro div ul li a p {
+  
 }
