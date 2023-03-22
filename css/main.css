@@ -132,7 +132,7 @@ div#title a{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 90%;
+  font-size: 73%;
 }
 div#title a::before{
   content: "";
@@ -174,7 +174,7 @@ main section#intro {
   padding-bottom: 30px;
 }
 main section#intro div {
-  width: 1400px;
+  width: 1221px;
   margin: 0 auto;
 }
 main section#intro div h2 {
@@ -184,9 +184,45 @@ main section#intro div ul {
   justify-content: space-between;
 }
 main section#intro div ul li {
-  width: calc(100% / 4 - 60px / 4);
-  height: 260px;
-  background-color: #ccc;
+  width: calc(100% / 4 - 60px / 6);
+  height: 262px;
+  background-color: #ccc0;
+}
+main section#intro div ul li:nth-child(1) a{
+  background: radial-gradient( #8ca2b250 10%, #8ca2b2 100% );
+	background: -moz-radial-gradient(circle, #8ca2b250 10%, #8ca2b2 100%);
+	background: -webkit-radial-gradient(circle,  #8ca2b250 10%, #8ca2b2 100%);
+	background: -o-radial-gradient(circle,  #8ca2b250 10%, #8ca2b2 100%);
+	background: -ms-radial-gradient(circle,  #8ca2b250 10%, #8ca2b2 100%);
+	background: radial-gradient(circle,  #8ca2b250 10%, #8ca2b2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8ca2b250', endColorstr='#8ca2b2', gradientType=0);
+}
+main section#intro div ul li:nth-child(2) a{
+  background: radial-gradient( #b1c8d050 15%, #b1c8d0 100% );
+  background: -moz-radial-gradient(circle, #b1c8d050 15%, #b1c8d0 100%);
+	background: -webkit-radial-gradient(circle,  #b1c8d050 15%, #b1c8d0 100%);
+	background: -o-radial-gradient(circle,  #b1c8d050 15%, #b1c8d0 100%);
+	background: -ms-radial-gradient(circle,  #b1c8d050 15%, #b1c8d0 100%);
+	background: radial-gradient(circle,  #b1c8d050 15%, #b1c8d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b1c8d050', endColorstr='#b1c8d0', gradientType=0);
+}
+main section#intro div ul li:nth-child(3) a{
+  background: radial-gradient( #d1d1d350 10%, #bbbbd2 100% );
+  background: -moz-radial-gradient(circle, #d1d1d350 10%, #bbbbd2 100%);
+	background: -webkit-radial-gradient(circle,  #d1d1d350 10%, #bbbbd2 100%);
+	background: -o-radial-gradient(circle,  #d1d1d350 10%, #bbbbd2 100%);
+	background: -ms-radial-gradient(circle,  #d1d1d350 10%, #bbbbd2 100%);
+	background: radial-gradient(circle,  #d1d1d350 10%, #bbbbd2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1d1d350', endColorstr='#bbbbd2', gradientType=0);
+}
+main section#intro div ul li:nth-child(4) a{
+  background: radial-gradient( #c6bfa550 20%, #c6bfa5 100% );
+  background: -moz-radial-gradient(circle, #c6bfa550 20%, #c6bfa5 100%);
+	background: -webkit-radial-gradient(circle,  #c6bfa550 20%, #c6bfa5 100%);
+	background: -o-radial-gradient(circle,  #c6bfa550 20%, #c6bfa5 100%);
+	background: -ms-radial-gradient(circle,  #c6bfa550 20%, #c6bfa5 100%);
+	background: radial-gradient(circle,  #c6bfa550 20%, #c6bfa5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6bfa550', endColorstr='#c6bfa5', gradientType=0);
 }
 main section#intro div ul li a {
   
@@ -198,9 +234,33 @@ main section#intro div ul li a {
   justify-content: center;
   align-items: center;
 }
+main section#intro div ul li a::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 94px;
+  background-image: url(../img/stream.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 15px;
+}
+main section#intro div ul li:nth-child(2) a::before{
+    background-image: url(../img/cloud.svg);
+}
+main section#intro div ul li:nth-child(3) a::before{
+    background-image: url(../img/settings.svg);
+}
+main section#intro div ul li:nth-child(4) a::before{
+    background-image: url(../img/podcasts.svg);
+}
 main section#intro div ul li a h3 {
   
 }
 main section#intro div ul li a p {
+  
+}
+
+main section#intro div ul li:nth-child(3){
   
 }
