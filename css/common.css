@@ -1,5 +1,10 @@
+.padding30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .wrap{
-
+  width: 1221px;
+  margin: 0 auto;
 }
 .hide{
   display: none;
@@ -7,15 +12,18 @@
 .block{
   display: block;
 }
-
 .textcenter{
   text-align: center;
 }
-
 .h2{
   font-size: 40px;
 }
-
 .h3{
   font-size: 20px;
+}
+.p{
+  font-size: 16px;
+}
+.ccc{
+  color: #4f4c4c;
 }
