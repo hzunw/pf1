@@ -1,0 +1,341 @@
+
+/* 태블릿 버전*/
+@media screen and (max-width:1024px){
+  header{
+  width: 100%;
+  left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  }
+  ul.gnb{
+    
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  justify-content: center;
+  border: none;
+  }
+  ul.etcmenu{
+    position: static;
+  }
+  main section{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main section#intro div ul li{
+    height: 23.63636363636364vw;
+  }
+  main section#intro div ul li a::before{
+    height: 8.5454545454545454vw
+  }
+  
+  /*사회공헌*/
+  #society .wrap{
+    background-image: none;
+  }
+  
+/* 그룹사소식   */
+  #news .wrap ul{
+  display: block;
+  }
+  #news .wrap ul li{
+  width: auto;
+  }
+  #news .wrap ul li:nth-child(n+2){
+  width: auto;
+  }
+  #news .wrap ul li:first-child{
+    margin-bottom: 20px;
+  }
+  #news .wrap ul li:first-child a figure{
+  position: static;
+  width: auto;
+  grid-row: 1 / span 2;
+  }
+  
+  #news .wrap ul li:first-child a{
+  display: grid;
+  grid-template-columns: 50% calc(50% - 30px);
+  column-gap: 30px;
+  grid-template-rows: auto 1fr;
+  }
+  #news .wrap ul li:not(:first-child) a{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* 하단영역 */
+  footer .wrap{
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  #subtitle .wrap button{
+    right: 50px;
+  }
+  #ssubtitle .wrap button{
+    right: 50px;
+  }
+}
+
+/* 모바일 버전*/
+@media screen and (max-width:760px){ /*max-width:760px는 너비가 760이하일때,최대너비가 760일때*/
+  /* 헤더영역   */
+  header{
+    width: 100%;
+    left: 0;
+  }
+  header h1{
+    margin: 0 auto;
+    transform: scale(0.65);
+  }
+  
+  header h1 a{
+  background-image: url(../img/hj_logo2.png);
+  background-repeat: no-repeat;
+  margin-left: 21px;
+  }
+  
+  header nav:hover ul:first-child{
+    display: block;
+    background: white;
+    position: absolute;
+    right: 0;
+  }
+  header nav>*:not(:last-child){
+    display: none;
+  }
+  .ham{
+    display: block;
+    transform: translateX(-20px);
+  }
+  /*   타이틀영역   */
+  div#title{
+    height: 100%;
+    min-height: 440px;
+  }
+  div#title::before{
+    display: none;
+  }
+  div#title p{
+  transform: scale(0.77);
+  top: calc(-16px * 0.77);
+  margin-bottom: calc(30px * 0.77);
+  }
+  div#title a{
+  transform: scale(0.77);
+  }
+  /*  sbtt  */
+  #subtitle .wrap{
+    flex-direction: column;
+    row-gap: 18px;
+  }
+  #subtitle .wrap button{
+    position: static;
+    justify-content: center;
+  }
+  
+  #subtitle .wrap button:before{
+    display: none;
+  }
+  
+  #subtitle .wrap button:after{
+   transform: translate(0px) rotate(45deg); 
+  }
+  /*  sbtt2  */
+  #ssubtitle .wrap{
+    flex-direction: column;
+    row-gap: 18px;
+  }
+  #ssubtitle .wrap button{
+    position: static;
+    justify-content: center;
+  }
+  
+  #ssubtitle .wrap button:before{
+    display: none;
+  }
+  
+  #ssubtitle .wrap button:after{
+   transform: translate(0px) rotate(45deg); 
+  }
+  /* 내용영역   */
+  
+  main > nav{
+    display: none;
+  }
+  
+  #greeting section > div{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  #greeting section div strong{
+    display: block;
+  }
+  
+  #greeting section div strong:nth-child(1){
+    font-size: 25px;
+  }
+  main section#intro div ul{
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  }
+  main section#intro div ul li{
+  min-width: calc(100% / 2 - 10px / 2);
+  height: 46.71052631578947vw;
+  }
+  main section#intro div ul li a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+  main section#intro div ul li a::before{
+    height: 50px;
+  }
+  main section#intro div ul li a p{
+    
+  }
+  
+/* 사회공헌 */
+  #society{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #society .wrap{
+    display: block;
+    background-image: none;
+  }
+  #society .wrap > p.p{
+    position: static;
+  }
+  
+/*그룹사 소식*/
+  main section#news div ul{
+    
+  }
+  #news .wrap ul{
+    display: block;
+  }
+  #news .wrap ul li{
+    width: auto;
+    margin-bottom: 20px;
+  }
+  #news .wrap ul li:first-child{
+    margin-bottom: 20px;
+  }
+  
+  #news .wrap ul li:first-child a figure{
+    position: static;
+    width: auto;
+  }
+  
+  #news .wrap ul li:first-child a figure img{
+  }
+  
+  #news .wrap ul li:nth-child(n+2){
+  width: auto;
+  margin-bottom: 15px;
+  }
+  
+  #news .wrap ul li a h3{
+    
+  }
+  
+/* 인재경영*/
+  
+  #TalentManagement section div ul li{
+    
+  grid: none;
+  }
+  #TalentManagement section div ul li figure img{
+    
+  width: 152%;
+  }
+  #TalentManagement section div ul:nth-child(3){
+    
+  }
+  #TalentManagement section div ul li h3{
+    
+  padding-left: 26px;
+  font-size: 18px;
+  padding-top: 20px;
+  }
+  #TalentManagement section div p span:nth-child(2)::before {
+    content: " ";
+  }
+  #TalentManagement section div p:nth-child(3)::before {
+      content: " ";  
+  }
+  #TalentManagement section div p:nth-child(3){
+    
+  padding-left: 26px;
+  padding-top: 0;
+  position: static;
+  width: 130%;
+  }
+  #TalentManagement section div p:nth-child(2){
+    
+  margin-top: 3px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  }
+  
+  #TalentManagement section div ul li p{
+    
+  margin-top: 12px;
+  margin-bottom: 6px;
+  }
+  #TalentManagement section div p{
+
+  margin-top: 20px;
+  }
+/*  하단  */
+  /*  common  */
+  .wrap{
+    padding-left: 10px;
+    padding-right: 10px ;
+  }
+  .h1{
+    font-size: calc(50px * 0.77);
+  }
+  .h3{
+  font-size: calc(23px * 0.77);
+  }
+  .padding30 {
+    padding-top: calc(30px * 0.77);
+    padding-bottom: calc(30px * 0.77);
+  }
+  .block{
+    display: inline;
+  }
+  
+  .blackbold{
+    font-size: 20px;
+  }
+  .bluebold{
+    font-size: 20px !important;;
+  }
+  #company section div strong:nth-child(1){
+    font-size: 22px;
+  }
+  #company section div{
+  padding-top: 29px;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  }
+  #company section div p:nth-of-type(n+1):nth-of-type(-n+6){
+    margin-top: 10px
+  }
+  #company section div ul li{
+  width: auto;
+  display: block;
+}
+  #company section div ul li h3{
+    
+  }
+
+    
+  }
+}

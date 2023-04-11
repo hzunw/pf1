@@ -1,0 +1,120 @@
+#TalentManagement{compa
+
+}
+/* 페이지 주소 */
+#TalentManagement nav{
+
+}
+#TalentManagement nav ol{
+  
+}
+#TalentManagement nav ol li{
+
+}
+#TalentManagement nav ol li:first-child{
+
+}
+#TalentManagement nav ol li:nth-child(n+2){
+
+}
+#TalentManagement nav ol li:last-child{
+
+}
+#TalentManagement nav ol li a{
+
+}
+#TalentManagement nav ol li:first-child a{
+
+}
+#TalentManagement section{
+    
+}
+#TalentManagement section div{
+}
+#TalentManagement section div strong{
+    
+}
+#TalentManagement section div strong:nth-child(1){
+  line-height: 1.3;
+  margin-bottom: 30px;
+  font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 29px;
+  color: #00a0c6;
+}
+#TalentManagement section div strong:nth-child(2){
+  margin-bottom: 30px;
+  font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+#TalentManagement section div strong:nth-child(2)::before{
+ content: "";
+ width: 100%;
+ display: block; 
+ border-top:2px solid blue;
+ margin-bottom:20px; 
+}
+#TalentManagement section div p{
+  line-height: 1.4;
+  margin-bottom: 42px;
+  font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+#TalentManagement section div p:nth-child(5){
+  
+}
+#TalentManagement section div p:nth-child(2){
+  color: #777;
+  line-height: 22px;
+}
+#TalentManagement section div p:nth-child(3){
+  color: #777;
+  padding-left: 67px;
+  line-height: 30px;
+  position: relative;
+}
+
+
+#TalentManagement section div p:nth-child(3)::before{
+  content: "◆";
+  font-size: 7px;
+  color: #ccc;
+  top: 1px;
+  position: absolute;
+  left: 52px;
+}
+
+#TalentManagement section div p span:nth-child(2)::before{
+  content: "◆";
+  font-size: 7px;
+  color: #ccc;
+  top: 30px;
+  position: absolute;
+  left: 52px;
+}
+
+
+
+#TalentManagement section div ul:nth-child(3){
+  border: solid 1px #ddd;
+  box-sizing: border-box;
+}
+
+#TalentManagement section div ul li figure{
+  grid-row: 1 / span 2;
+}
+#TalentManagement section div ul li figure img{
+    
+  width: 176%;
+}
+#TalentManagement section div ul li figure figcation{
+    
+}
+#TalentManagement section div ul li h3{
+  margin-bottom: 20px;
+  padding-left: 49px;
+  padding-top: 34px;
+  font-size: 22px;
+  font-weight: 500;
+}
+#TalentManagement section div ul li p{
+    
+}
+
